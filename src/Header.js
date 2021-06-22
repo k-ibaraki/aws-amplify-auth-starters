@@ -31,7 +31,7 @@ class Header extends React.Component {
               </Link>
             ) : (
               <Link to='/auth' {...css(styles.link)}>
-                <p {...css(styles.navItem)}>Sign In</p>
+                <p {...css(styles.navItem)}>Sign In...</p>
               </Link>
             ) : null
           }
