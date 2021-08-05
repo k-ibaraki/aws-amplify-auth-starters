@@ -27,6 +27,8 @@ class App extends Component {
     }
     try {
       const user = await Auth.currentAuthenticatedUser()
+      const groups = user.signInUserSession.accessToken.payload["cognito:groups"]
+      console.log(groups)
       this.setState({ currentUser: user, isLoaded: true })
     } catch (err) {
       this.setState({ currentUser: null, isLoaded: true })
