@@ -1,0 +1,7 @@
+{
+  "groupPermissionMap": {
+    "sample1": [
+      "create/update"
+    ]
+  }
+}
